@@ -1,0 +1,35 @@
+/*
+ * Programa para somar a media e o aluno.
+ */
+package NomeMedia;
+//classe Scanner é responsável pela leitura do dados digitados no teclado
+//a classe Scanner é predefinida no Java
+import java.util.Scanner;
+
+public class Programa1 
+{
+        
+int nota1, nota2, nota3;
+String nome;
+
+static Scanner leitura = new Scanner(System.in);
+    
+    public static void main(String[] args)
+    {
+        System.out.println("Digite o nome do aluno: ");
+        String nome = leitura.nextLine ();
+        
+        System.out.println("Digite a primeira nota: ");
+        int nota1 = leitura.nextInt();
+
+        System.out.println("Digite a segunda nota: ");
+        int nota2 = leitura.nextInt();
+        
+        System.out.println("Digite a terceira nota: ");
+        int nota3 = leitura.nextInt();
+
+        System.out.println("Calculando a média do aluno..." );
+        System.out.println("A média do aluno: " +  nome + "é " +  (nota1 + nota2 + nota3) / 3);
+    }
+   
+}
