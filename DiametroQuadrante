@@ -1,0 +1,47 @@
+/*
+ * Programa para retornar o valor do diâmetro e de 
+1 quadrante desta circunferência.
+ */
+package DiametroQuadrante;
+//classe Scanner é responsável pela leitura do dados digitados no teclado
+//a classe Scanner é predefinida no Java
+import java.util.Scanner;
+
+public class Programa2
+{
+        
+int raio;
+
+static Scanner leitura = new Scanner(System.in);
+    
+    public static void main(String[] args)
+    {
+        System.out.println("Digite o raio do círculo: ");
+        int raio = leitura.nextInt();
+        
+        int x, y;
+        x = 2;
+        y = (int) 3.14;
+        
+        System.out.println("Calculando o diâmetro e o quadrante do círculo... " );
+        System.out.println("O diâmetro é: " + ( raio * x * y ));
+        if ((raio * x * y ) <= 90) 
+        {
+            System.out.println("Primeiro quadrante");
+        }
+        else if((raio * x * y ) > 90 && (raio * x * y ) <= 180) 
+        {
+           System.out.println("Segundo quadrante");
+        }
+        if ((raio * x * y ) > 180) 
+        {
+            System.out.println("Terceiro quadrante");
+        }
+        else if((raio * x * y ) > 270 && (raio * x * y ) <= 360 ) 
+        {
+           System.out.println("Quarto quadrante");
+        }
+        
+        
+    }
+}
