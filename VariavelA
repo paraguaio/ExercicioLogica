@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package VariavelA;
+import java.util.Scanner;
+
+public class Programa3 
+{
+    int variavel;
+    static Scanner leitura = new Scanner(System.in);
+
+    public static void main(String[] args)
+    {
+    System.out.println("Digite a variável: ");
+    int variavel = leitura.nextInt();
+    
+    System.out.println("Realizando os cálculos..." );
+    System.out.println("o dobro da variável: " + ( variavel * 2 ))
+    System.out.println("o triplo do dobro da variável: " + ( variavel * 2 * 3 ))
+    System.out.println("a metade do triplo do dobro da variável: " + ( variavel * 2 * 3 / 2 ))
+    System.out.println("o quadrado da variável: " + ( variavel * variavel )) 
+    System.out.println("a quinta parte do dobro da variável: " + ( variavel * 2 / 5 ))        
+    }
+}
